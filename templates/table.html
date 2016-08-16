@@ -1,0 +1,23 @@
+<div class="container">
+     <div class="row" ng-repeat="x in stars" >
+       <div class="col-lg-4" class="pl"> 
+     	<img src="{{x.image}}" style="width: 150px; height: 150px">
+       </div>
+       <div class="col-lg-4" class="pl"> 
+     	<a href="#{{$index}}" style="font-size: 20px;"> {{x.name}} </a>
+       </div>
+       <div class="col-lg-4" class="pl" style="font-size: 20px"> 
+     	{{x.caption}}
+       </div>			
+</div>
+      
+
+      <!-- <table>
+         <tr ng-repeat="x in stars">
+          
+          <td><img src="{{x.image}}" style="width: 80px; height: 80px"></td>
+          <td> <a href="#{{$index}}"> {{x.name}} <a> </td>
+          <td> {{x.caption}} </td>
+          
+         </tr>
+      </table> -->
